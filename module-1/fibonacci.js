@@ -16,6 +16,15 @@ function fibonacci(n) {
      */
     // PLACE YOUR CODE BETWEEN THIS...
 
+    if (typeof n !== "number" || n < 0) {
+        throw new Error();
+    }
+
+    if (n < 2) {
+        return n;
+    }
+    return fibonacci(n-2) + fibonacci(n-1);
+
     // ...AND THIS COMMENT LINE!
     return nThFibonacci;
 }

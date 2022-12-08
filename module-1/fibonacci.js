@@ -6,7 +6,6 @@
  * @returns {number} Fibonacci number or 0 if any arguments are not proper
  */
 function fibonacci(n) {
-    let nThFibonacci;
     /*
      * Your task is to calculate the nth value of the
      * Fibonacci sequence.
@@ -24,8 +23,5 @@ function fibonacci(n) {
         return n;
     }
     return fibonacci(n-2) + fibonacci(n-1);
-
-    // ...AND THIS COMMENT LINE!
-    return nThFibonacci;
 }
 module.exports = fibonacci;
